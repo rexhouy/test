@@ -1,0 +1,338 @@
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源中心相关文件</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #007bff;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+        .navbar a.active {
+            background-color: #004085;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        h1, h2, h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul, ol {
+            margin: 10px 0 10px 20px;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #007bff;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="javascript:void(0);" onclick="showSection('policy')" class="active">资源中心隐私政策摘要</a>
+        <a href="javascript:void(0);" onclick="showSection('sdk')">第三方SDK说明</a>
+        <a href="javascript:void(0);" onclick="showSection('guide')">资源中心APP第三方SDK合规指引</a>
+    </div>
+
+    <div class="content">
+        <!-- 资源中心隐私政策摘要 -->
+        <div id="policy" class="section active">
+            <h1>资源中心隐私政策摘要</h1>
+            <p>本摘要旨在以简洁、清晰、易懂的方式向您介绍我们收集、使用和共享您个人信息的情况。如您希望了解更详细的内容，请查阅《资源中心隐私政策》完整版。</p>
+
+            <h2>一、提供服务收集的个人信息</h2>
+            <ol>
+                <li>
+                    <strong>用户登录</strong>
+                    <p>用户提供：账号、密码、手机号、验证码</p>
+                </li>
+                <li>
+                    <strong>用户登录</strong>
+                    <p>应用获取：网络IP</p>
+                </li>
+                <li>
+                    <strong>修改密码</strong>
+                    <p>用户提供：账号、密码</p>
+                </li>
+                <li>
+                    <strong>资源核查等功能</strong>
+                    <p>应用获取：精准定位信息（涉及功能包括资源核查、管线采集、在线设计、现场审计、单点纠错、我的收藏、资源查询、资源查勘、备品备件、仪器仪表、类备件、维护硬件盘点、备件归还入库、铁塔资源）</p>
+                </li>
+                <li>
+                    <strong>APP前后台切换</strong>
+                    <p>应用获取：系统进程信息</p>
+                </li>
+                <li>
+                    <strong>隐私政策等页面加载</strong>
+                    <p>应用获取：SSID（涉及页面包括隐私政策、与第三方共享个人信息清单、资源履历、资源新增、资源修改、属性核查、报表视图）</p>
+                </li>
+            </ol>
+            <p>查看《已收集个人信息清单》</p>
+
+            <h2>二、提供服务使用的权限</h2>
+            <ol>
+                <li><strong>写入SD卡</strong>：用于图片缓存加速、运行日志及附件存储到本地，不授权则无法使用对应功能。</li>
+                <li><strong>读取SD卡</strong>：用于从相册识别二维码、选择照片上传和读取本地附件，不授权则无法使用对应功能。</li>
+                <li><strong>拍照</strong>：用于扫码和拍摄照片，不授权则无法使用对应功能。</li>
+                <li><strong>创建蓝牙连接/蓝牙管理</strong>：用于连接蓝牙打印机打印标签，不授权则无法使用对应功能。</li>
+                <li><strong>访问粗略/精确位置</strong>：用于显示当前位置、搜索附近资源等，不授权则无法使用对应功能。</li>
+                <li><strong>NFC</strong>：用于在线设计中扫描NFC标签，不授权则无法使用对应功能。</li>
+                <li><strong>读取应用列表</strong>：用于一键导航功能，获取已安装地图导航APP，不授权则无法使用对应功能。</li>
+            </ol>
+            <p>查看应用权限申请与使用情况说明</p>
+
+            <h2>三、我们和第三方共享的信息</h2>
+            <p>为提供服务，您的个人信息可能在各服务提供方之间共享，我们会在授权范围内共享，涉及敏感信息或新增共享方时将再次征求同意。</p>
+            <p>查看与第三方共享个人信息清单</p>
+
+            <h2>四、用户个人信息权益保障</h2>
+            <ol>
+                <li>
+                    <strong>删除记录</strong>
+                    <p>可拨打15375287539申请删除，我们将在5个工作日内处理。</p>
+                </li>
+                <li>
+                    <strong>管理与更正</strong>
+                    <p>查询/更正：通过客户端首页->我的->头像查看简要信息，变更可拨打15375287539办理，5个工作日内回复。</p>
+                    <p>撤销授权：Android手机可通过“设置—>应用—>权限”或“资源中心APP→我的→设置→系统权限管理”操作。</p>
+                    <p>注销账号：可在EOMS系统发起流程或拨打15375287539办理，也可通过“首页->我的->设置->注销账号”查看方式，5个工作日内回复。</p>
+                </li>
+            </ol>
+
+            <h2>五、如何联系我们</h2>
+            <p>中国移动通信集团浙江有限公司，注册地址：浙江省杭州市江干区解放东路19号12层；联系电话：13616518020</p>
+            <p>个人信息保护专职部门/专员：15375287539（一般15个工作日内回复）</p>
+            <p>不满意答复可向消费者权益保护部门或上级主管部门投诉。</p>
+        </div>
+
+        <!-- 第三方SDK说明 -->
+        <div id="sdk" class="section">
+            <h1>第三方SDK说明</h1>
+            <p>为了保障资源中心APP相关功能的实现与应用的稳定运行，我们会接入由第三方提供的软件工具开发包（SDK）以实现相关目的。根据功能的不同，我们会收集您的不同类型的个人信息。我们会对合作方获取信息的软件工具开发包（SDK）进行严格的安全监测，以保障数据安全。您可以通过相关链接查看第三方的数据使用和保护规则。</p>
+
+            <ol>
+                <li>
+                    <strong>百度定位SDK</strong>
+                    <p>第三方名称：北京百度网讯科技有限公司</p>
+                    <p>使用目的：提供定位功能及服务</p>
+                    <p>收集信息：设备信息（Android ID、系统版本等）、位置信息（经纬度、WiFi列表等）、网络类型</p>
+                    <p>共享方式：SDK直接收集，不涉及数据传输共享</p>
+                    <p>使用权限：网络权限、位置权限、存储权限</p>
+                    <p>使用场景：资源核查、管线采集、现场审计等功能的定位相关操作</p>
+                    <p>隐私政策：<a href="https://lbs.baidu.com/index.php?title=openprivacy" target="_blank">https://lbs.baidu.com/index.php?title=openprivacy</a></p>
+                </li>
+                <li>
+                    <strong>百度地图SDK</strong>
+                    <p>第三方名称：北京百度网讯科技有限公司</p>
+                    <p>使用目的：提供地图展示功能及服务</p>
+                    <p>收集信息：设备信息、位置信息（SSID）、网络类型</p>
+                    <p>共享方式：SDK直接收集，不涉及数据传输共享</p>
+                    <p>使用权限：网络权限、存储权限</p>
+                    <p>使用场景：资源定位、地图选点、离线地图等</p>
+                    <p>隐私政策：<a href="https://lbs.baidu.com/index.php?title=openprivacy" target="_blank">https://lbs.baidu.com/index.php?title=openprivacy</a></p>
+                </li>
+                <li>
+                    <strong>品胜SDK</strong>
+                    <p>第三方名称：重庆品胜科技有限公司</p>
+                    <p>使用目的：实现连接品胜蓝牙打印机打印标签</p>
+                    <p>收集信息：设备蓝牙信息</p>
+                    <p>共享方式：SDK直接收集，不涉及数据传输共享</p>
+                    <p>使用权限：蓝牙权限、存储权限</p>
+                    <p>使用场景：标签打印相关操作</p>
+                    <p>隐私政策：<a href="http://www.wewin.com.cn/" target="_blank">http://www.wewin.com.cn/</a></p>
+                </li>
+                <li>
+                    <strong>开玛SDK</strong>
+                    <p>第三方名称：开玛电子科技（上海）有限公司</p>
+                    <p>使用目的：实现连接开玛蓝牙打印机打印标签</p>
+                    <p>收集信息：设备蓝牙信息</p>
+                    <p>共享方式：SDK直接收集，不涉及数据传输共享</p>
+                    <p>使用权限：蓝牙权限、存储权限</p>
+                    <p>使用场景：标签打印相关操作</p>
+                    <p>隐私政策：<a href="http://www.k-marking.com.cn/" target="_blank">http://www.k-marking.com.cn/</a></p>
+                </li>
+                <li>
+                    <strong>华为统一扫码SDK</strong>
+                    <p>第三方名称：华为软件技术有限公司</p>
+                    <p>使用目的：提供二维码、条形码扫描识别服务</p>
+                    <p>收集信息：传感器信息、网络信息、设备信息等</p>
+                    <p>共享方式：SDK本机采集</p>
+                    <p>使用权限：相机权限、存储权限、网络权限</p>
+                    <p>使用场景：所有扫码功能场景</p>
+                    <p>隐私政策：<a href="https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/sdk-data-security-0000001050043971" target="_blank">华为SDK隐私政策</a></p>
+                </li>
+            </ol>
+        </div>
+
+        <!-- 资源中心APP第三方SDK合规指引 -->
+        <div id="guide" class="section">
+            <h1>资源中心APP第三方SDK合规指引</h1>
+
+            <h2>一、引言</h2>
+            <p>本指引依据《资源中心隐私政策》《中华人民共和国个人信息保护法》等法律法规制定，明确第三方SDK的合规使用要求，保障用户合法权益。</p>
+
+            <h2>二、SDK权限使用说明</h2>
+            <h3>1. 自有SDK权限补充说明</h3>
+            <table>
+                <tr>
+                    <th>权限名称</th>
+                    <th>功能用途</th>
+                    <th>是否必要</th>
+                    <th>必要性说明</th>
+                </tr>
+                <tr>
+                    <td>相机权限</td>
+                    <td>资源拍照记录、现场审计照片采集</td>
+                    <td>必要</td>
+                    <td>核心业务功能依赖，无替代方式</td>
+                </tr>
+                <tr>
+                    <td>写入SD卡</td>
+                    <td>图片缓存、日志及附件存储</td>
+                    <td>必要</td>
+                    <td>本地存储基础功能，无替代方案</td>
+                </tr>
+                <tr>
+                    <td>读取SD卡</td>
+                    <td>相册识别二维码、照片上传</td>
+                    <td>必要</td>
+                    <td>多个业务模块基础功能，无替代方案</td>
+                </tr>
+                <tr>
+                    <td>网络权限</td>
+                    <td>数据传输、资源同步</td>
+                    <td>必要</td>
+                    <td>所有后台业务交互必需</td>
+                </tr>
+                <tr>
+                    <td>NFC</td>
+                    <td>扫描NFC标签、快速读取资源信息</td>
+                    <td>非必要</td>
+                    <td>特定场景增强功能，可手动输入替代</td>
+                </tr>
+            </table>
+
+            <h3>2. 第三方SDK权限说明</h3>
+            <h4>（1）百度定位SDK</h4>
+            <table>
+                <tr>
+                    <th>权限名称</th>
+                    <th>功能用途</th>
+                    <th>是否必要</th>
+                    <th>必要性说明</th>
+                </tr>
+                <tr>
+                    <td>网络权限</td>
+                    <td>传输定位数据、获取网络状态</td>
+                    <td>必要</td>
+                    <td>定位功能依赖网络，无替代方案</td>
+                </tr>
+                <tr>
+                    <td>位置权限</td>
+                    <td>获取经纬度、GNSS等位置信息</td>
+                    <td>必要</td>
+                    <td>核心功能必需，用于显示位置、搜索附近资源</td>
+                </tr>
+                <tr>
+                    <td>存储权限</td>
+                    <td>缓存定位数据、离线地图</td>
+                    <td>非必要</td>
+                    <td>仅优化定位速度，不影响基础功能</td>
+                </tr>
+            </table>
+
+            <h4>（2）百度地图SDK、品胜/开玛SDK、华为统一扫码SDK</h4>
+            <p>（权限说明表格结构同上，根据各SDK功能填写对应权限信息）</p>
+
+            <div class="highlight">
+                <p>注：所有非必要权限，需向用户明确提示“不授权不影响核心功能”，并提供关闭入口。</p>
+            </div>
+
+            <h2>三、增强功能说明</h2>
+            <h3>1. 权限开关功能</h3>
+            <p>需在APP内提供权限管理入口（“我的-设置-系统权限管理”），用户关闭权限后立即停止对应信息收集，且不得限制基础功能。</p>
+
+            <h2>四、需使用者协助的合规要求</h2>
+            <ol>
+                <li>在隐私政策中单独列明各SDK的第三方名称、收集信息类型、使用目的等；</li>
+                <li>定期对SDK进行安全检测，限制内部员工数据访问权限；</li>
+                <li>用户提出信息查询、更正、删除等请求时，72小时内响应，5个工作日内完成核查。</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // 定义showSection函数，实现内容切换
+        function showSection(sectionId) {
+            // 隐藏所有内容区块
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            
+            // 移除导航栏所有active类
+            var navLinks = document.getElementsByClassName('navbar')[0].getElementsByTagName('a');
+            for (var j = 0; j < navLinks.length; j++) {
+                navLinks[j].classList.remove('active');
+            }
+            
+            // 显示目标内容区块并激活对应导航
+            document.getElementById(sectionId).classList.add('active');
+            for (var k = 0; k < navLinks.length; k++) {
+                if (navLinks[k].getAttribute('onclick').includes(sectionId)) {
+                    navLinks[k].classList.add('active');
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
